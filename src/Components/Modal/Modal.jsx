@@ -1,21 +1,27 @@
 import React from 'react';
-import style from './modal.module.css';
+import Modalstyle from './modal.module.css';
 
-const Modal = () => {
-  return (
-    <div className={style.modalbg}>
-      <div className={style.modal}>
-        <div className={style.modalbgimage}></div>
-        <div className={style.modalContent}>
-          <h1 className={style.mainTitle}>Faca a sua reserva do prato</h1>
+const Modal = ({ content, style, setIsOpen }) => {
+  const backgroundStyle = {
+    background: `url(${content.image}) no-repeat center center`,
+  };
+  function handleCLoseModal(e) {
+    if (e.currentTarget === e.target) setIsOpen(false);
+  }
+  return (  
+    <div className={Modalstyle.modalbg} onClick={handleCLoseModal}>
+      <div className={Modalstyle.modal}>
+        <div className={Modalstyle.modalbgimage} style={backgroundStyle}></div>
+        <div className={Modalstyle.modalContent}>
+          <h1 className={Modalstyle.mainTitle}>Faca a sua reserva do prato</h1>
 
-          <div>
+          <div className={style.contentinfo}>
             <h4>
-              <span>Caril de Camarão</span>
-              <span>200 MT</span>
+              <span>{content.name}</span>
+              <span>{content.price} MT</span>
             </h4>
             <p>
-              Category:<span>Sul</span>
+              Category:<span>{content.category}</span>
               <span>★★★★★</span>
             </p>
           </div>
