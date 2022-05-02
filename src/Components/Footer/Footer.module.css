@@ -3,22 +3,22 @@
   padding: 3rem 0 5rem 0;
   color: var(--color-grey);
 }
-.footer .footer-header {
+.footer .footerHeader {
   padding: 0 0 3rem 0;
 }
-.footer .footer-header .logo {
+.footer .footerHeader .logo {
   border: none;
 }
 
-.footer-body,
-.footer-body-list {
+.footerBody,
+.footerBodyList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   font-size: 0.8rem;
 }
 
-.footer-body-list ul {
+.footerBodyList ul {
   display: grid;
   gap: 1.5rem;
 }

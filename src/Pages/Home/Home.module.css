@@ -1,17 +1,17 @@
 .main {
   margin: 2rem 0;
   padding: 1rem;
-  display: none;
+
 }
 
-.main-row {
+.mainrow {
   display: grid;
   grid-template-columns: 20rem 1fr;
   gap: 1rem;
   align-items: start;
 }
 
-.main-category {
+.mainCategory {
   border-right: 1px solid #ebe8e7;
 }
 
@@ -34,20 +34,20 @@
   color: var(--color-black);
 }
 
-.main-list {
+.mainList {
   margin-top: 1rem;
   display: grid;
   gap: 1rem;
 }
 
-.main-content-list {
+.mainContentlist {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   gap: 1rem;
 }
 
-.content-item {
+.contentitem {
   cursor: pointer;
   margin-bottom: 4rem;
   transform: perspective(1px) translateZ(0);
@@ -55,16 +55,16 @@
   transition-timing-function: ease-out;
 }
 
-.content-item:hover {
+.contentitem:hover {
   transform: translateY(-8px);
 }
 
-.content-info {
+.contentinfo {
   margin: 1.5rem 0 0 0;
   display: grid;
   gap: 0.6rem;
 }
-.content-info h4 {
+.contentinfo h4 {
   font-size: 1rem;
   font-weight: bold;
   display: flex;
@@ -72,7 +72,7 @@
   justify-content: space-between;
 }
 
-.content-info p {
+.contentinfo p {
   font-size: 0.8rem;
   display: flex;
   align-items: center;
@@ -81,14 +81,14 @@
 }
 
 @media (max-width: 988px) {
-  .main-row {
+  .mainrow {
     grid-template-columns: 1fr;
   }
-  .main-category {
+  .mainCategory {
     border: none;
     display: none;
   }
-  .main-category.ative {
+  .mainCategory.ative {
     display: block;
     transition: 0.3s;
     animation: 0.3s showDown;
@@ -135,8 +135,7 @@
   }
 }
 
-
-.content-item-span {
+.contentitem-span {
   display: block;
   padding: 0.5rem 1rem;
   background: white;
@@ -145,11 +144,11 @@
   border: 1px solid red;
 }
 
-.content-item-span button {
+.contentitem-span button {
   width: 100%;
   display: block;
 }
 
-.content-item-span {
+.contentitem-span {
   font-size: 0.8rem;
 }

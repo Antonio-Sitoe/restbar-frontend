@@ -1,15 +1,15 @@
 .backgroundImage {
   width: 100%;
   min-height: 400px;
-  background: url('./../../img/bg-img.jpg') no-repeat center center;
+  background: url('../../img/bg-img.jpg') no-repeat center center;
   background-size: cover;
 }
-.about-content {
+.aboutcontent {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
 }
-.about-content h2 {
+.aboutcontent h2 {
   text-align: center;
 }
 
