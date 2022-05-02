@@ -1,4 +1,4 @@
-
+import Modal from '../Modal/Modal';
 const MainContent = ({ style, data }) => {
   return (
     <section className={style.mainContent}>
@@ -22,6 +22,7 @@ const MainContent = ({ style, data }) => {
           );
         })}
       </ul>
+      <Modal />
     </section>
   );
 };

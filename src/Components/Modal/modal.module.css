@@ -1,4 +1,4 @@
-.modal-bg {
+.modalbg {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
   z-index: 1000;
   background: rgba(0, 0, 0, 0.8);
 }
-.modal-bg.ative {
+.modalbg.ative {
   display: flex;
 }
 
@@ -34,37 +34,37 @@
   }
 }
 
-.modal-bg-image {
+.modalbgimage {
   background-size: cover;
   height: 500px;
 }
 
-.modal-content {
+.modalContent {
   padding: 2rem;
 }
 
-.modal-content div.contentinfo {
+.modalContent div.contentinfo {
   padding: 1rem 0 0 0;
 }
 
-.modal-content form {
+.modalContent form {
   margin-top: 2rem;
   display: grid;
   gap: 1rem;
 }
 
-.modal-content form input,
+.modalContent form input,
 button {
   padding: 0.8rem;
 }
-.modal-content form input {
+.modalContent form input {
   outline: none;
   border: 1px solid whitesmoke;
 }
-.modal-content form input:focus {
+.modalContent form input:focus {
   border: 1px solid var(--color-blue);
 }
-.modal-content form button {
+.modalContent form button {
   border: none;
   background: var(--color-blue);
   color: var(--color-white);
@@ -76,7 +76,7 @@ button {
   .modal {
     grid-template-columns: 1fr;
   }
-  .modal-bg-image {
+  .modalbgimage {
     height: 80px;
   }
 }
