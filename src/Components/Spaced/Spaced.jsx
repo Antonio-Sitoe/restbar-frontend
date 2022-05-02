@@ -1,9 +1,10 @@
+import React from 'react';
 import img from '../../img/filter.png';
 
-const Spaced = ({ style }) => {
+const Spaced = ({ style, handleHideCategory }) => {
   return (
     <div className={style.spaced}>
-      <span className={style.spanBtn}>
+      <span className={style.spanBtn} onClick={handleHideCategory}>
         <img src={img} alt='image of filter' />
         Filtros
       </span>
